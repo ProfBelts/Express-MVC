@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Document</title>
+        <link rel="stylesheet" href="/stylesheets/result-style.css" />
+    </head>
+    <body>
+        <div>
+            <h1>Submitted Entry</h1>
+            <p>
+                Your Name (Optional):
+                <span><%= name %></span>
+            </p>
+            <p>
+                Course Title:
+                <span><%= course %></span>
+            </p>
+            <p>
+                Given Score (1-10):
+                <span><%= score %> pts</span>
+            </p>
+            <p>
+                Reason:
+                <span class="content"><%= reason %></span>
+            </p>
+            <a class="submit" href="/">Return</a>
+        </div>
+    </body>
+</html>

@@ -1,0 +1,54 @@
+* {
+    padding: 20px;
+    box-sizing: border-box;
+}
+
+form {
+    margin: 0 auto;
+    text-align: left;
+    border: 1px solid black;
+    width: 500px;
+}
+
+form h1 {
+    text-align: center;
+    margin-bottom: 2px;
+}
+
+label {
+    display: block;
+    margin-bottom: 5px;
+}
+
+input,
+select,
+textarea {
+    display: block;
+    width: 45%;
+    margin-top: 12px;
+    padding: 5px 50px 10px 10px;
+}
+
+textarea {
+    width: 400px;
+    font-size: 1rem;
+    height: 100px;
+    resize: none;
+    padding-left: 10px;
+    padding-bottom: 20px;
+}
+
+.score {
+    width: 25%;
+    font-size: 1rem;
+    padding-left: 5px;
+    cursor: pointer;
+}
+
+.submit {
+    margin-left: auto;
+    width: 15%;
+    text-align: center;
+    padding-left: 10px;
+    cursor: pointer;
+}

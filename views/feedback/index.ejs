@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Feedback Form</title>
+        <link rel="stylesheet" href="/stylesheets/style.css" />
+    </head>
+    <body>
+        <form action="/feedback/results" method="POST">
+            <h1>Feedback Form</h1>
+
+            <label for="name">
+                Your Name (Optional):
+                <input type="text" name="name" />
+            </label>
+
+            <label for="course">
+                Course Title
+                <select name="course">
+                    <% courses.forEach(function(course) { %>
+                    <option><%= course %></option>
+                    <% }); %>
+                </select>
+            </label>
+
+            <label for="score">
+                Given Score (1-10)
+                <select name="score" class="score">
+                    <% for (let i = 1; i <= 10; i++) { %>
+                    <option><%= i %></option>
+                    <% } %>
+                </select>
+            </label>
+
+            <label for="reason">
+                Reason:
+                <textarea name="reason" rows="10" cols="100"></textarea>
+            </label>
+
+            <input class="submit" type="submit" />
+        </form>
+    </body>
+</html>
